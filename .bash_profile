@@ -4,6 +4,12 @@
 # "s ." will open the current directory in Sublime
 alias s='open -a "Sublime Text"'
 
+chrome () {
+  /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $* 2>&1 &
+}
+
+alias chromex="chrome --disable-web-security"
+
 # Color LS
 colorflag="-G"
 alias ls="command ls ${colorflag}"
